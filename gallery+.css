@@ -1,0 +1,188 @@
+
+.gallery_section{
+	background:#f1f5f8;
+}
+.photo_gallery .panel-right{
+	float:right;
+}
+.photo_gallery .panel-title{
+	font-size:40px;
+	font-weight:bold;
+}
+
+.photo_gallery .nav-tabs {
+    position: relative;
+    bottom: 40px;
+    clear:both;
+    border-bottom: 1px solid transparent;
+}
+
+.photo_gallery .nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.photo_gallery .nav-tabs > li > a {
+	margin:0px 20px;
+    line-height: .85;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    color: #000000;
+	font-size:18px;
+	padding: 10px 25px;
+    display: block;
+	text-transform:uppercase;
+}
+
+.photo_gallery .nav-tabs > li > a:hover {
+    border-color: transparent;
+    color: #000000;
+    background-color: #ffdd65;	
+	border-radius: 50px;
+}
+
+.photo_gallery .nav-tabs > li.active > a,
+.photo_gallery .nav-tabs > li.active > a:hover,
+.photo_gallery .nav-tabs > li.active > a:focus {
+    color: #000000;
+	border-radius: 50px;
+    background-color: #ffdd65;
+    border-bottom-color: transparent;
+}
+.photo_gallery .nav-tabs .nav-link.active, .photo_gallery .nav-tabs .nav-item.show .nav-link{
+	color: #000000;
+	background-color: #ffdd65;
+    border-color: transparent;
+}
+
+.photo_gallery .tab-content{
+	padding-top:30px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%
+}
+
+#custCarousel .carousel-indicators, 
+#master_gallery .carousel-indicators {
+    margin-top: 20px;
+    margin: 0px;
+    left: auto;
+    right: 15px;
+    bottom: 85px;
+}
+
+#custCarousel .carousel-indicators>li, 
+#master_gallery .carousel-indicators>li {
+    width: 120px;
+	background-color: transparent;
+}
+
+#custCarousel .carousel-indicators li img, 
+#master_gallery .carousel-indicators li img {
+    display: block;
+	border-radius:5px;
+	border:3px solid #000000;
+}
+
+#custCarousel .carousel-indicators li.active img,
+#master_gallery .carousel-indicators li.active img {
+    opacity: 1;
+	border-radius:5px;
+	border:3px solid #ffdd65;
+}
+
+#custCarousel .carousel-indicators li:hover img,
+#master_gallery .carousel-indicators li:hover img {
+    opacity: 0.75;
+}
+
+.carousel-item img {
+    width: 100%;
+	border-radius:5px;
+}
+
+.gallery_b .carousel-control-prev, .carousel-control-next{
+	width:6%;
+}
+.gallery_b .carousel-control-prev-icon{
+	width: 45px;
+    display: block;
+    top: 50%;
+    height: 45px;
+    background-image: url(../images/gallery-left-arrow.png);
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    margin-top: -16px;
+    -webkit-transition: opacity 0.35s linear 0s;
+    transition: opacity 0.35s linear 0s;
+}
+
+.gallery_b .carousel-control-next-icon {
+    width: 45px;
+    display: block;
+    top: 50%;
+    height: 45px;
+    background-image: url(../images/gallery-right-arrow.png);
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    margin-top: -16px;
+    -webkit-transition: opacity 0.35s linear 0s;
+    transition: opacity 0.35s linear 0s;
+}
+
+@media(max-width:896px) {
+	.photo_gallery .panel-right{
+		float:left;
+		width:100%;
+	}
+	.photo_gallery .nav-tabs{
+		bottom:0px;
+		margin-bottom:20px;
+	}
+	.photo_gallery .nav-tabs > li > a{
+		margin: 0px 5px;
+	}
+	.gallery_b .carousel-control-prev, .carousel-control-next{
+		width: 15%;
+	}
+	
+	#custCarousel .carousel-indicators,
+	#master_gallery .carousel-indicators{
+		bottom: 70px;
+	}
+	#custCarousel .carousel-indicators>li,{
+	#master_gallery .carousel-indicators>li{
+		width: 85px;
+	}
+}
+@media(max-width:630px) {
+	#custCarousel .carousel-indicators, {
+	#master_gallery .carousel-indicators {
+		bottom: 50px;
+	}
+	#custCarousel .carousel-indicators>li, {
+	#master_gallery .carousel-indicators>li {
+		width: 60px;
+		margin-right: 0px;
+	}
+}
+@media(max-width:480px) {
+	.photo_gallery .nav-tabs > li > a {
+		margin: 0px 2px;
+		padding: 10px;
+	}
+}
+@media(max-width:420px) {
+	#custCarousel .carousel-indicators>li, {
+	#master_gallery .carousel-indicators>li {
+		width: 40px;
+	}
+	#custCarousel .carousel-indicators, {
+	#master_gallery .carousel-indicators {
+		bottom: 30px;
+	}
+}
